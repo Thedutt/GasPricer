@@ -11,15 +11,17 @@ namespace GasPrice.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IGasRepo _repo;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IGasRepo _repo)
         {
-            _logger = logger;
+            this._repo = _repo;
         }
 
         public IActionResult Index()
         {
+            _repo.PricesForState("AL");
+            
             return View();
         }
 

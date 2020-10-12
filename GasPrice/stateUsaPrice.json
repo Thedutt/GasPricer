@@ -1,0 +1,133 @@
+{
+  "success": true,
+  "result": {
+    "state": {
+      "currency": "usd",
+      "name": "Alabama",
+      "lowerName": "alabama",
+      "gasoline": "1.905",
+      "midGrade": "2.232",
+      "premium": "2.561",
+      "diesel": "2.236"
+    },
+    "cities": [
+      {
+        "currency": "usd",
+        "gasoline": "1.874",
+        "midGrade": "2.173",
+        "premium": "2.498",
+        "diesel": "2.169",
+        "name": "Anniston-Oxford",
+        "lowerName": "anniston-oxford"
+      },
+      {
+        "currency": "usd",
+        "gasoline": "1.890",
+        "midGrade": "2.219",
+        "premium": "2.512",
+        "diesel": "2.134",
+        "name": "Auburn",
+        "lowerName": "auburn"
+      },
+      {
+        "currency": "usd",
+        "gasoline": "1.876",
+        "midGrade": "2.211",
+        "premium": "2.558",
+        "diesel": "2.370",
+        "name": "Birmingham",
+        "lowerName": "birmingham"
+      },
+      {
+        "currency": "usd",
+        "gasoline": "1.997",
+        "midGrade": "2.305",
+        "premium": "2.658",
+        "diesel": "2.165",
+        "name": "Daphne-Fairhope-Foley",
+        "lowerName": "daphne-fairhope-foley"
+      },
+      {
+        "currency": "usd",
+        "gasoline": "1.866",
+        "midGrade": "2.197",
+        "premium": "2.525",
+        "diesel": "2.150",
+        "name": "Decatur",
+        "lowerName": "decatur"
+      },
+      {
+        "currency": "usd",
+        "gasoline": "1.939",
+        "midGrade": "2.258",
+        "premium": "2.542",
+        "diesel": "2.143",
+        "name": "Dothan",
+        "lowerName": "dothan"
+      },
+      {
+        "currency": "usd",
+        "gasoline": "1.908",
+        "midGrade": "2.214",
+        "premium": "2.543",
+        "diesel": "2.148",
+        "name": "Florence-Muscle Shoals",
+        "lowerName": "florence-muscle shoals"
+      },
+      {
+        "currency": "usd",
+        "gasoline": "1.815",
+        "midGrade": "2.144",
+        "premium": "2.482",
+        "diesel": "2.085",
+        "name": "Gadsden",
+        "lowerName": "gadsden"
+      },
+      {
+        "currency": "usd",
+        "gasoline": "1.918",
+        "midGrade": "2.240",
+        "premium": "2.525",
+        "diesel": "2.265",
+        "name": "Huntsville",
+        "lowerName": "huntsville"
+      },
+      {
+        "currency": "usd",
+        "gasoline": "1.949",
+        "midGrade": "2.299",
+        "premium": "2.636",
+        "diesel": "2.207",
+        "name": "Mobile",
+        "lowerName": "mobile"
+      },
+      {
+        "currency": "usd",
+        "gasoline": "1.903",
+        "midGrade": "2.248",
+        "premium": "2.563",
+        "diesel": "2.214",
+        "name": "Montgomery",
+        "lowerName": "montgomery"
+      },
+      {
+        "currency": "usd",
+        "gasoline": "1.886",
+        "midGrade": "2.206",
+        "premium": "2.504",
+        "diesel": "2.205",
+        "name": "Russell County",
+        "lowerName": "russell county"
+      },
+      {
+        "currency": "usd",
+        "gasoline": "1.875",
+        "midGrade": "2.189",
+        "premium": "2.515",
+        "diesel": "2.184",
+        "name": "Tuscaloosa",
+        "lowerName": "tuscaloosa"
+      }
+    ]
+  }
+}

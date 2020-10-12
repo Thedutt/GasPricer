@@ -23,6 +23,22 @@ namespace GasPrice
 
             var state = new State();
             state.Name = (string) obj["result"]["state"]["name"];
+            state.AvgGasoline = (double)obj["result"]["state"]["gasoline"];
+            state.AvgMidGrade = (double)obj["result"]["state"]["midGrade"];
+            state.AvgDiesel = (double)obj["result"]["state"]["diesel"];
+
+            var citiesList = new List<City>();
+
+            foreach (var item in obj["result"]["cities"])
+            {
+                var city = new City();
+                city.Name = (string) item["name"];
+                city.Gasoline = (double)item["gasoline"];
+                city.MidGrade = (double)item["midGrade"];
+                city.Diesel = (double)item["diesel"];
+                citiesList.Add(city);
+            }
+            state.Cities = citiesList;
 
             return state;
         }

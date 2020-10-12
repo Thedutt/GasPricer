@@ -1,8 +1,17 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model StateList 
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Find the average gas prices for each United States state based on cities</h2>
+@using (Html.BeginForm("ShowState", "Home", "Post"))
+{
+    
+    <div class="form-group">
+        <label for="">Select a State</label>
+        <select class="form-control" name="selectedState" value="">
+            @foreach (var state in Model.States)
+            {
+                <option value="@state">@state</option>
+            }
+        </select>
+    </div>
+    <input type="submit" value="See Prices" class="btn btn-primary" />
+}

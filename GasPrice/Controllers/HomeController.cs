@@ -20,9 +20,16 @@ namespace GasPrice.Controllers
 
         public IActionResult Index()
         {
-            _repo.PricesForState("AL");
-            
-            return View();
+            var states = new StateList();
+
+            return View(states);
+        }
+
+        public IActionResult ShowState(string selectedState)
+        {
+            var state = _repo.PricesForState(selectedState);
+
+            return View(state);
         }
 
         public IActionResult Privacy()

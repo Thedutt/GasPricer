@@ -10,6 +10,7 @@ namespace GasPrice.Models
         public string Name { get; set; }
         public double Gasoline { get; set; }
         public double MidGrade { get; set; }
+        public double Premium { get; set; }
         public double Diesel { get; set; }
     }
 }

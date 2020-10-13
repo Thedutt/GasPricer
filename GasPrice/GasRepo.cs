@@ -25,6 +25,7 @@ namespace GasPrice
             state.Name = (string) obj["result"]["state"]["name"];
             state.AvgGasoline = (double)obj["result"]["state"]["gasoline"];
             state.AvgMidGrade = (double)obj["result"]["state"]["midGrade"];
+            state.AvgPremium = (double)obj["result"]["state"]["premium"];
             state.AvgDiesel = (double)obj["result"]["state"]["diesel"];
 
             var citiesList = new List<City>();
@@ -35,6 +36,7 @@ namespace GasPrice
                 city.Name = (string) item["name"];
                 city.Gasoline = (double)item["gasoline"];
                 city.MidGrade = (double)item["midGrade"];
+                city.Premium = (double)item["premium"];
                 city.Diesel = (double)item["diesel"];
                 citiesList.Add(city);
             }

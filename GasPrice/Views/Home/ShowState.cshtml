@@ -10,6 +10,7 @@
                 <th>City</th>
                 <th>Price of Regular(USD)</th>
                 <th>Price of MidGrade(USD)</th>
+                <th>Price of Premium(USD)</th>
                 <th>Price of Diesel(USD)</th>
             </tr>
         </thead>
@@ -18,9 +19,10 @@
             {
                 <tr>
                     <td>@city.Name</td>
-                    <td>@city.Gasoline</td>
-                    <td>@city.MidGrade</td>
-                    <td>@city.Diesel</td>
+                    <td>$@city.Gasoline</td>
+                    <td>$@city.MidGrade</td>
+                    <td>$@city.Premium</td>
+                    <td>$@city.Diesel</td>
                 </tr>
             }
         </tbody>

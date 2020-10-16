@@ -1,4 +1,5 @@
 ﻿using GasPrice.Models;
+using GasPricer.Models;
 using Newtonsoft.Json.Linq;
 using RestSharp;
 using System;
@@ -43,6 +44,34 @@ namespace GasPrice
             state.Cities = citiesList;
 
             return state;
+        }
+
+       public Province PricesForProvince(string prov)
+        {
+            var client = new RestClient($"https://gas-price.p.rapidapi.com/canada");
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("x-rapidapi-host", "gas-price.p.rapidapi.com");
+            request.AddHeader("x-rapidapi-key", key);
+            IRestResponse response = client.Execute(request);
+
+            var obj = JObject.Parse(response.Content);
+
+            var province = new Province();
+           
+            foreach(var item in obj["result"])
+            {
+                if(item["name"].ToString() == prov)
+                {
+                    province.Name = (string)item["name"];
+                    province.AverageGas = (double)item["gasoline"];
+                    break;
+                }
+                
+            }
+            
+           
+            return province;
+
         }
 
 

@@ -1,0 +1,18 @@
+﻿@model GasPricer.Models.ProvinceList
+
+<h1>Find the average gas price across any Canadian Province</h1>
+@using (Html.BeginForm("ShowProvince", "Home", "Post"))
+{
+
+    <div class="form-group">
+        <label for="">Select a State</label>
+        <select class="form-control" name="selectedProvince" value="">
+            @foreach (var prov in Model.Province)
+            {
+                <option value="@prov">@prov</option>
+            }
+        </select>
+    </div>
+    <input type="submit" value="See Prices" class="btn btn-primary" />
+}
+

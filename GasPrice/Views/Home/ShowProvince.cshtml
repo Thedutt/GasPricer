@@ -1,0 +1,24 @@
+﻿@model GasPricer.Models.Province
+
+<h1>@Model.Name</h1>
+
+<div class="fixed_headers">
+    <table>
+        <thead>
+            <tr>
+                <th>Province</th>
+                <th>Price of Gasoline(USD)</th>
+
+            </tr>
+        </thead>
+        <tbody>
+ 
+                <tr>
+                    <td>@Model.Name</td>
+                    <td>$@Model.AverageGas</td>
+
+                </tr>
+            
+        </tbody>
+    </table>
+</div>

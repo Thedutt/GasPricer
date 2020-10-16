@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using GasPrice.Models;
+using GasPricer.Models;
 
 namespace GasPrice.Controllers
 {
@@ -30,6 +31,19 @@ namespace GasPrice.Controllers
             var state = _repo.PricesForState(selectedState);
 
             return View(state);
+        }
+         public IActionResult Canada()
+        {
+            var province = new ProvinceList();
+
+            return View(province);
+        }
+
+        public IActionResult ShowProvince(string selectedProvince)
+        {
+            var province = _repo.PricesForProvince(selectedProvince);
+
+            return View(province);
         }
 
         public IActionResult Privacy()
